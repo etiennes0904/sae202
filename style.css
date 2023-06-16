@@ -1,0 +1,352 @@
+﻿/* Styles généraux */
+.contenutrajet{
+  display: flex;
+}
+.sectiontrajet {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sectiontrajet p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.sectiontrajet strong {
+  font-weight: bold;
+}
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 1080px;
+  margin: 0 auto;
+  -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+  backdrop-filter: blur(15px);
+  background-color: rgba(182, 182, 182, 0.2);
+
+}
+
+/* Styles de l'en-tête */
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  box-shadow: 0 0 20px rgba(0,0,0,.2);
+  background-image: url("images/Covoiturage.jpg");
+  height: 300px;
+  background-repeat: no-repeat;
+  width: 1080px;
+
+
+}
+.menu {
+  display: flex;
+  padding:0;
+  justify-content: left;
+}
+.menu a {
+  display:block;
+  margin: 15px;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  width: 90px;
+  background-color: #fff;
+
+
+}
+.menu li {
+  list-style-type: none ;
+}
+.menu a:hover{
+  background-color: rgb(76, 76, 76);
+  color: #fff;
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 2s ease;
+
+
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Styles du contenu principal */
+main {
+  padding: 20px;
+}
+
+/* Styles du pied de page */
+footer {
+  background-color: #dfdfdf;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+
+#imagebanniere{
+  width: 1000px;
+  margin: 0 auto;
+}
+h1{
+  justify-content: center;
+}
+#gridimage {
+  width: 600px; /* Largeur totale du carré */
+  height: 600px; /* Hauteur totale du carré */
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.imagegrid {
+  width: 50%; /* Largeur des images individuelles */
+  height: 50%; /* Hauteur des images individuelles */
+  box-sizing: border-box;
+
+}
+.big-button {
+  display: inline-block;
+  padding: 30px 50px;
+  font-size: 18px;
+  background-color: #78B9D2;
+  color: #FFF;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.big-button:hover {
+  background-color: #95cfe4;
+}
+#bonjourprofil{
+  display:block;
+  margin: 15px;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  width: 90px;
+  background-color: #fff;
+}
+.ecology-info {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.ecology-info h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.ecology-info p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.ecology-info ul {
+  list-style: disc;
+  color: #666;
+  font-size
+}
+
+
+@media all and (max-width: 640px) {
+
+  body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%; /* Modifier pour occuper toute la largeur de l'écran */
+    margin: 0 auto;
+    -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(15px);
+    background-color: rgba(182, 182, 182, 0.2);
+  }
+
+  /* Styles de l'en-tête */
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    background-image: url("images/Covoiturage.jpg");
+    height: 200px; /* Réduire la hauteur de l'en-tête pour s'adapter à l'écran */
+    background-repeat: no-repeat;
+    width: 100%; /* Modifier pour occuper toute la largeur de l'écran */
+  }
+
+  .menu {
+    position: relative;
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li {
+    display: inline-block;
+    position: relative;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  /* Styles du menu déroulant */
+  .menu ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  .menu li:hover > ul.dropdown {
+    display: block;
+    animation: slideDown 0.3s ease;
+  }
+
+  .menu ul.dropdown li {
+    display: block;
+  }
+
+  .menu ul.dropdown a {
+    padding: 10px 20px;
+  }
+
+  /* Animation de glissement vers le bas */
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Styles du contenu principal */
+  main {
+    padding: 10px; /* Réduire le rembourrage pour un meilleur espacement sur les petits écrans */
+  }
+
+  /* Styles du pied de page */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #imagebanniere {
+    width: 100%; /* Modifier pour occuper toute la largeur de l'écran */
+    margin: 0 auto;
+  }
+
+  h1 {
+    text-align: center; /* Centrer le titre */
+  }
+
+  #gridimage {
+    width: 100%; /* Modifier pour occuper toute la largeur de l'écran */
+    height: auto; /* Ajuster la hauteur automatiquement */
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .imagegrid {
+    width: 50%; /* Modifier pour afficher deux images par ligne sur les petits écrans */
+    height: auto; /* Ajuster la hauteur automatiquement */
+    box-sizing: border-box;
+  }
+
+  .big-button {
+    display: inline-block;
+    padding: 20px 40px; /* Ajuster le rembourrage pour un meilleur espacement sur les petits écrans */
+    font-size: 16px; /* Réduire la taille de la police pour un meilleur ajustement sur les petits écrans */
+    background-color: #78B9D2;
+    color: #FFF;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .big-button:hover {
+    background-color: #95cfe4;
+  }
+
+  #bonjourprofil {
+    display: block;
+    margin: 5px; /* Réduire la marge pour un meilleur espacement sur les petits écrans */
+    padding: 5px; /* Réduire le rembourrage pour un meilleur espacement sur les petits écrans */
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    width: 70px; /* Réduire la largeur pour un meilleur espacement sur les petits écrans */
+    background-color: #fff;
+  }
+}
