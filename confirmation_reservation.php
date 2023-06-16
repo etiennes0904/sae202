@@ -94,7 +94,7 @@ require 'header.php';
 </head>
 <body>
   <form id="formcontact" action="traitements/envoie_mail2.php" method="post">
-    <h2>Proposer un service contre ce trajet</h2>
+    <h2>Proposer un service contre ce trajet.</h2>
     <br>
     <div id='entete'>
       <div>
